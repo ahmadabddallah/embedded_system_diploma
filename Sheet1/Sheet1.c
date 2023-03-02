@@ -4,6 +4,7 @@
 #define max(x,y) (x>y)?  x : y
 int main()
 {
+    /*
     // 1- Write a program to take 2 numbers from user and calculate sum of all numbers between them.
 
    int Number1=0,Number2=0;
@@ -22,7 +23,7 @@ int main()
         printf("%d ",i);
     }
 
-   
+
 
     // 2- Write a program to take numbers from user and find the max and min from them (let users choose the No of numbers.
 
@@ -137,7 +138,7 @@ int main()
     }
     printf("THe sum of digits is %d",sum);
 
-	
+
 	//12 -write a program to take even numbers from user and print the sum of them after each entry if the user enters 2 odd number the program print "bye" and stopped.
 	int counter_of_odd=0;
     int sum=0;
@@ -155,7 +156,27 @@ int main()
             sum+=x;
 		printf("The sum of number is %d \n",sum);
 		}
-		
-		
+		*/
+    //13-
+    int num;
+    int sum=0;
+    scanf("%d",&num);
+    int x;
+    while(num>0){
+        x/=num%10;
+        if(x==1 || x==2 || x==3 || x==5 || x==7 ){
+            sum+=0;
+        }
+        else if(x==0 || x== 4 || x==6 || x==9){
+            sum+=1;
+        }
+        else if(x==8){
+            sum+=2;
+        }
+
+        num/=10;
+    }
+    printf("The summation is %d",sum);
+
     return 0;
 }
