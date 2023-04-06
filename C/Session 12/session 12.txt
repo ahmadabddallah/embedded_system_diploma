@@ -1,0 +1,9 @@
+Session 12 tasks 
+1-function to remove prime numbers from array and replace with zero
+https://pastebin.com/zV0uDLPn
+
+2- function to find max number in array and it’a repetitions
+https://pastebin.com/6ab8YPDR
+
+3 - find max and second max in array , try with one loop
+https://pastebin.com/1QwUNSkF

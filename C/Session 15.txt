@@ -1,0 +1,5 @@
+int to string that handle negative :
+https://pastebin.com/vCq8hvMH
+
+string to int that handle negative:
+https://pastebin.com/L0viHpJE

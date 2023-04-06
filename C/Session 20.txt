@@ -1,0 +1,93 @@
+1-Pairs:
+int pairs(int k, int arr_count, int* arr) {
+    heapSort(arr,arr_count);
+    
+    int count=0;
+    for(long long i=0;i<arr_count-1;i++){
+        for(long long j=i+1;(long long)(arr[i]+k)>=arr[j] &&j<arr_count;j++){
+            if(arr[i]+k ==arr[j]){
+                count++;
+                break;
+            }
+        }
+    }
+    
+    return count;
+    
+}
+
+2-Pangram
+char* pangrams(char* s) {
+    char frq[26]={0};
+    
+    for(int i=0;s[i]!='\0';i++){
+        if(s[i]==' '){
+            continue;
+        }
+        if (s[i]>='A' &&s[i]<='Z'){
+        s[i]-='A';
+        s[i]+='a';    
+        }
+        frq[s[i]-'a']++;
+    }
+    int count=0;
+    for(int i=0;i<26;i++){
+        if(frq[i]>=1){
+            count++;
+        }
+    }
+    printf("%d",count);
+    if(count==26){
+        return "pangram";
+    }
+    else {
+    return "not pangram";
+    }
+}
+
+3-
+
+
+
+
+
+4-base of 2 recursive:
+
+int base_of_2_r(int n){
+
+    if(n==0){
+        return 0;
+    }
+    if(n==1){
+        return 1;
+    }
+
+    if(n%2==0){
+       return base_of_2_r(n/2);
+    }
+    else
+        return 0;
+
+}
+
+5-ATM Base Case :
+
+
+
+
+
+
+
+7-Mobile test :
+
+2 pointer first one at Floor 1 second at at Floor 10
+then first beacame floor 11 and second floor 20
+.
+.
+.	Iterativting 
+.
+.
+.
+after second pointer damages the mobile move the first one 2 step per once eg.(111->113->115)
+if it damaged then the answer is (first floor -1). 
+
