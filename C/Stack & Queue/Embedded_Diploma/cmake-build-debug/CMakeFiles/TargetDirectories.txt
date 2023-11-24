@@ -1,0 +1,3 @@
+C:/Users/ahmed/OneDrive/Documents/Embedded_Diploma/cmake-build-debug/CMakeFiles/Embedded_Diploma.dir
+C:/Users/ahmed/OneDrive/Documents/Embedded_Diploma/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ahmed/OneDrive/Documents/Embedded_Diploma/cmake-build-debug/CMakeFiles/rebuild_cache.dir

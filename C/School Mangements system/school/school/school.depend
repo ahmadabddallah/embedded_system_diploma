@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1684891942 source:c:\users\ahmed\desktop\embedded_diploma_tasks\school\school\main.c
+	<stdio.h>
+	<stdlib.h>
+	"student.h"
+
+1684891734 c:\users\ahmed\desktop\embedded_diploma_tasks\school\school\student.h
+	<stdio.h>
+	<stdlib.h>
+
+1684891942 source:c:\users\ahmed\desktop\embedded_diploma_tasks\school\school\student.c
+	"student.h"
+
+1684888342 source:h:\embedded diploma\embedded_diploma_tasks\school\school\main.c
+	<stdio.h>
+	<stdlib.h>
+	"student.h"
+
+1684888134 h:\embedded diploma\embedded_diploma_tasks\school\school\student.h
+	<stdio.h>
+	<stdlib.h>
+
+1684888783 source:h:\embedded diploma\embedded_diploma_tasks\school\school\student.c
+	"student.h"
+

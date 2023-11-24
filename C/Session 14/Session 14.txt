@@ -1,0 +1,13 @@
+Session 14 Tasks 
+
+birthday cake candles:
+https://pastebin.com/2EZKHHqp
+
+for loop in C :
+https://pastebin.com/p2Vnc3es
+
+string compare_non_sensitive :
+https://pastebin.com/LZANEJUa
+
+function odd_even:
+https://pastebin.com/NMC0pyGx

@@ -1,0 +1,2 @@
+what is Realloc function do ?
+resize a block of memory and move the data in the previous storage to the new one

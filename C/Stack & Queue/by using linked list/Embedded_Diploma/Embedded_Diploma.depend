@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1700846105 source:c:\users\ahmed\onedrive\documents\embedded_diploma\main.c
+	<stdio.h>
+	<stdlib.h>
+	"string.h"
+	"math.h"
+	"stack.h"
+	"queue.h"
+	"list.h"
+
+1698070391 c:\users\ahmed\onedrive\documents\embedded_diploma\math.h
+
+1698199108 source:c:\users\ahmed\onedrive\documents\embedded_diploma\math.c
+	"math.h"
+
+1698073171 c:\users\ahmed\onedrive\documents\embedded_diploma\string.c
+	<stdio.h>
+	<stdlib.h>
+	"string.h"
+
+1700845470 source:c:\users\ahmed\onedrive\documents\embedded_diploma\string.c
+	<stdio.h>
+	<stdlib.h>
+	"string.h"
+
+1698072063 c:\users\ahmed\onedrive\documents\embedded_diploma\string.h
+
+1700794965 c:\users\ahmed\onedrive\documents\embedded_diploma\stack.h
+
+1700798486 source:c:\users\ahmed\onedrive\documents\embedded_diploma\stack.c
+	"stack.h"
+
+1700845540 c:\users\ahmed\onedrive\documents\embedded_diploma\queue.h
+	"stdlib.h"
+	"stdio.h"
+	"math.h"
+
+1700846065 source:c:\users\ahmed\onedrive\documents\embedded_diploma\queue.c
+	"queue.h"
+
+1700793491 source:c:\users\ahmed\onedrive\documents\embedded_diploma\list.c
+	"list.h"
+
+1700792594 c:\users\ahmed\onedrive\documents\embedded_diploma\list.h
+

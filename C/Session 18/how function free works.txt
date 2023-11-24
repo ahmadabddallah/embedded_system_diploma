@@ -1,0 +1,1 @@
+it store the numbers of stored bytes in the address before the pointer 
