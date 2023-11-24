@@ -1,0 +1,29 @@
+project has 3 states 
+
+first state(Fine Mode) : 
+	     when temperature is lower than 50 then green led became on
+
+second state(Heat State):
+	    when temperature is higher than 50 then yellow became on and Turn ON smoke sesnor 
+
+Third State(Fire State):
+	    when Smoke sesnor is higher than 50 then Red led became on Apply Fire Mode and Turn On 
+
+
+should make a hystersis between Fine mode and Heat State
+
+
+must be a non reversible effect in Fire mode
+
+/*not done yet*/
+
+create an UI for the user to close the system and return to the default mode
+
+should be there an eeprom to store password and number of system burned
+
+
+advanced add Filter
+
+ 
+
+ 
