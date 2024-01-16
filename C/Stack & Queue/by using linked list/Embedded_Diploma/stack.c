@@ -53,7 +53,7 @@ STACK_T stack_create(int size){
 
 stackStatus_t stack_push_dynamic(stack_t *st,int data){
 
-    if(st->sp<st->size){
+    if(st->sp < st->size){
         st->dataArr[st->sp++]=data;
         return STACK_DONE;
     }
