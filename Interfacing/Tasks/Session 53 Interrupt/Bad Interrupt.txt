@@ -1,0 +1,8 @@
+what will happen if you turn on interrupt without initilzing it with ISR ?
+
+the ISR call Bad_Interrupt and it will change the Program Counter to the reset handler reset the whole system
+
+bad interrupt can be changed to function that toggle led or something 
+
+so why we are using it ?
+it's useful for deubgging

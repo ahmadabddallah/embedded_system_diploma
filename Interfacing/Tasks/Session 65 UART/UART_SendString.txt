@@ -1,0 +1,6 @@
+void UART_SendString(u8 *str){
+	u8 i;
+	for(i=0;str[i];i++){
+		UART_Send(str[i]);	
+	}
+}

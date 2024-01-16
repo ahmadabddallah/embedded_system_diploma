@@ -1,0 +1,13 @@
+void UART_ReceiveString(u8 *str){
+
+	u8 i=0;
+	str[0]=UART_Receive();
+	//0x0d is Enter
+		for(;str[i]!=0x0d;){
+			i++;
+			str[i]=UART_Receive();
+			
+		}
+		str[i]=0;
+	
+}

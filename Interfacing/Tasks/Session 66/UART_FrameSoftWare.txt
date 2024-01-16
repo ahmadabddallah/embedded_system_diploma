@@ -1,0 +1,70 @@
+
+#define EVEN	1
+#define ODD	0
+
+#define PARITY	EVEN
+
+
+
+u16 UART_Frame(u8 data){
+	
+	u16 frame=0;
+	
+	//to set data
+	frame=data;
+	frame=frame<<1;
+	
+	/*to check and set parity*/
+	u8 parity=0;
+	u8 ones=0;
+	while(data){
+		
+		ones+=data&1;
+		data>>1;
+	}
+	
+	
+	#if PARITY == EVEN
+	
+	if (parity%2!=0)
+	{
+		parity=1;
+	}
+	else{
+		parity=0;
+	}
+	#else
+	if (parity%2!=0)
+	{
+		parity=0;
+	}
+	else{
+		parity=1;
+	}
+	#endif
+	//to set parity
+	if(parity==0){
+		CLR_BIT(frame,9);
+	}
+	else{
+		SET_BIT(frame,9);
+	}
+	
+	
+	//to set stop bit
+	SET_BIT(frame,10);
+	
+	
+	return frame;
+	
+}
+
+
+void UART_sendFrame(u16 frame){
+	
+	for(u8 i=0;i<11;i++){
+		DIO_WritePin(PINC0,READ_BIT(frame,i));
+		_delay_us(104);
+	}
+	
+}

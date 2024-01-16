@@ -1,0 +1,4 @@
+how to open global interrupt before context switch?
+
+by using instruction ISR_NoBlock to ISR macrolike function (it's varidoc );
+

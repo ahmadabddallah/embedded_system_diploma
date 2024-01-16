@@ -1,0 +1,37 @@
+void UART_SendNumber(u32 num){
+	UART_Send((u8)num);
+	UART_Send((u8)(num>>8));
+	UART_Send((u8)(num>>16));
+	UART_Send((u8)(num>>24));
+	
+}
+
+//another solution 
+void UART_SendNumber(u32 num){
+	u8 *ptr=&num;
+
+	UART_Send(ptr[0]);
+	UART_Send(ptr[1]);
+	UART_Send(ptr[2]);
+	UART_Send(ptr[3]);
+	
+}
+
+
+//send as string
+
+void UART_SendNumber_string(u32 num){
+	
+	u32 arr[30]={0};
+	s8 idx_arr=0;
+	while (num>0){
+		arr[idx_arr++]=num%10+'0';
+		num/=10;
+		
+	}
+	for(s8 i=idx_arr-1;i>=0;i--){
+		UART_Send(arr[i]);
+		
+	}
+	
+}

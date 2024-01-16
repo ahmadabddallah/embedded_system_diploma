@@ -1,0 +1,13 @@
+u32 UART_ReceiveNumber(void){
+	u32 num=0;
+	
+	u8 *ptr=&num;
+	ptr[0]=UART_Receive();
+	ptr[1]=UART_Receive();
+	ptr[2]=UART_Receive();
+	ptr[3]=UART_Receive();
+	
+	return num;
+	
+	
+}
